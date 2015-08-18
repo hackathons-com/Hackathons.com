@@ -11,4 +11,4 @@ before_script:
 - rake db:create db:migrate --trace
 matrix:
   allow_failures:
-  - rvm: jruby-head
+    - rvm: jruby-head
