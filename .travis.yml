@@ -1,16 +1,12 @@
 language: ruby
 cache: bundler
 rvm:
-- 2.2.0
 - 2.1.0
 - 2.0.0
 before_install:
 - gem update --system
 - gem update bundler
 before_script:
-- rake db:create db:migrate --trace
+- bundle exec rake db:create db:migrate --trace
 install:
 - bundle install --jobs=1 --retry=3 --deployment --path=${BUNDLE_PATH:-vendor/bundle}
-matrix:
-  allow_failures:
-    - rvm: jruby-head
