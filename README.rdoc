@@ -1,30 +1,9 @@
 {<img src="https://circleci.com/gh/hackathons-com/Hackathons.com.svg?style=svg" alt="Circle CI" />}[https://circleci.com/gh/hackathons-com/Hackathons.com]
 
-== README
+== Hackathons.com
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is running on Ruby 2.1.6 with Rails 4.2.3-stable.
 
-Things you may want to cover:
+You need to have Ruby and Bundler installed on your machine. Once you have the above installed, run bundle install to install your gems.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Finally, run rails s to start the server.
