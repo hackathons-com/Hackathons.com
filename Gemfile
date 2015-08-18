@@ -39,6 +39,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'cucumber'
+  gem 'shoulda-matchers'
 
   gem 'rspec_junit_formatter'
 end
