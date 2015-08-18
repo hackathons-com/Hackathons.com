@@ -6,6 +6,7 @@ rvm:
 before_install:
 - gem update --system
 - gem update bundler
+- gem install nokogiri --no-ri --no-rdoc
 before_script:
 - bundle exec rake db:create db:migrate --trace
 install:
