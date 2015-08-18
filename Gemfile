@@ -39,6 +39,8 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'cucumber'
+
+  gem 'rspec_junit_formatter'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
