@@ -1,6 +1,6 @@
 test:
   override:
     - bundle exec rspec:
-      parallel: true
-      files:
+        parallel: true
+        files:
           - spec/**/*.rb
