@@ -40,6 +40,7 @@ group :development, :test do
   gem 'capybara'
   gem 'cucumber'
   gem 'shoulda-matchers'
+  gem 'faker'
 
   gem 'rspec_junit_formatter'
 end
