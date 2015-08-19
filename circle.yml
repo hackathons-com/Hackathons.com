@@ -3,4 +3,4 @@ test:
     - bundle exec rake spec:
       parallel: true
       files:
-        - spec/**/*.rb
+          - spec/**/*.rb
