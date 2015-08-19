@@ -6,4 +6,5 @@ RSpec.describe User, type: :model do
  it { validate_presence_of :password }
  it { validate_presence_of :password_confirmation }
  it { validate_uniqueness_of :email }
+ it { have_many :posts }
 end

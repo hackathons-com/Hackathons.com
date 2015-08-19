@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { belong_to :user }
+  it { validate_length_of :name }
+  it { validate_length_of :content }
+  it { validate_presence_of :name }
 end
