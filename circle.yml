@@ -1,6 +1,6 @@
 test:
-  post:
-    - bundle exec rake spec:
+  override:
+    - bundle exec rspec:
       parallel: true
       files:
           - spec/**/*.rb
