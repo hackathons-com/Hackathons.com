@@ -1,3 +1,6 @@
 test:
   post:
-    - bundle exec rake spec
+    - bundle exec rake spec:
+      parallel: true
+      files:
+        - spec/**/*.rb
