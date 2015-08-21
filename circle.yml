@@ -1,4 +1,7 @@
 test:
+  pre:
+    - bundle exec rake
+    - bundle exec cucumber
   override:
-    - bundle exec rspec:
+    - bundle exec rspec --format RspecJunitFormatter  --out rspec.xml:
         parallel: true
