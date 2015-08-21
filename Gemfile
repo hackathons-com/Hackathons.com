@@ -41,8 +41,8 @@ group :development, :test do
   gem 'cucumber'
   gem 'shoulda-matchers'
   gem 'faker'
-
-  gem 'rspec_junit_formatter'
+  gem 'guard-rspec'
+  gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
