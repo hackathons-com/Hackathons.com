@@ -8,3 +8,8 @@ test:
   override:
     - bundle exec rspec --format RspecJunitFormatter  --out $CIRCLE_TEST_REPORTS/rspec.xml:
         parallel: true
+deployment:
+  prod:
+    branch: master
+    heroku:
+      appname: hackathons-com
