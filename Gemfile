@@ -49,9 +49,15 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'activeadmin', github: 'activeadmin/activeadmin'
+gem 'newrelic_rpm'
 
 group :test do
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
+end
+
+group :production do
+  gem 'puma'
+  gem 'rails_12factor'
 end
