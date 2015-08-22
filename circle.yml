@@ -4,7 +4,6 @@ machine:
 test:
   pre:
     - bundle exec rake
-    - bundle exec cucumber
   override:
     - bundle exec rspec --format RspecJunitFormatter  --out $CIRCLE_TEST_REPORTS/rspec.xml:
         parallel: true
