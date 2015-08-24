@@ -28,13 +28,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 
 gem 'redis'
+gem 'dotenv-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  # gem 'web-console', '~> 2.0'
   
   # Test Suite
   gem 'rspec-rails'
@@ -52,6 +53,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'activeadmin', github: 'activeadmin/activeadmin'
 gem 'newrelic_rpm'
+gem 'derailed', group: :development
+gem 'stackprof', group: :development
 
 group :test do
   gem 'cucumber-rails', :require => false
